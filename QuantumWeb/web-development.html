@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Packages - QuantumWeb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: rgba(45, 0, 108, 1);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .logo {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .container {
+      padding: 40px 20px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1e1e1e;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      background: rgba(45, 0, 108, 255);
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+    }
+    .card a {
+      text-decoration: none;
+      color: white;
+    }
+    .card i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #8a2be2;
+    }
+    .card h2 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+    .card p {
+      font-size: 1em;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1a1a1a;
+    }
+    a.back-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #8a2be2;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    a.back-home:hover {
+      background: #a560f4;
+    }
+    
+    @media (max-width: 1024px) {
+        .content {
+            margin: 30px 20px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header {
+            padding: 30px 10px;
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        .price {
+            font-size: 1.8em;
+        }
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+        ul.features li {
+            font-size: 0.95em;
+            padding: 10px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.6em;
+        }
+        header p {
+            font-size: 0.9em;
+        }
+        .price {
+            font-size: 1.5em;
+        }
+        .tile {
+            padding: 16px;
+            font-size: 1em;
+        }
+        .btn {
+            padding: 12px;
+            font-size: 1em;
+        }
+        ul.features li i {
+            margin-right: 8px;
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .tile h2 {
+            font-size: 1em;
+        }
+        .tile p {
+            font-size: 0.85em;
+        }
+        .btn {
+            font-size: 0.95em;
+        }
+    }
+     
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo2.PNG" alt="QuantumWeb Logo" class="logo">
+    <h1>Web Development Packages</h1>
+  </header>
+  <section class="container">
+    <div class="card" data-aos="fade-up">
+      <a href="dev-starter.html">
+        <i class="fas fa-rocket"></i>
+        <h2>Starter</h2>
+        <p>$299 - One-page website<br>Basic design, contact form</p>
+      </a>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <a href="dev-professional.html">
+        <i class="fas fa-code"></i>
+        <h2>Professional</h2>
+        <p>$799 - Up to 5 pages<br>Responsive design, SEO optimization</p>
+      </a>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <a href="dev-business.html">
+        <i class="fas fa-globe"></i>
+        <h2>Business</h2>
+        <p>$1499 - Full site + CMS<br>Custom design, integrations, blog</p>
+      </a>
+    </div>
+  </section>
+  <a class="back-home" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  <footer>
+    &copy; 2025 QuantumWeb. All rights reserved.
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
